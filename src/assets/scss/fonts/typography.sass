@@ -1,25 +1,49 @@
-.text_body .text_body2 .text_note
+@use "../vars"
+
+@mixin title($font-size, $font-weight)
+  font-weight: $font-weight
+  line-height: 140%
+  margin-bottom: 30px
+  color: vars.$color-title
+  font-size: $font-size
+
+h1
+  @include title(32px, 600)
+
+h2
+  @include title(28px, 600)
+
+h3
+  @include title(24px, 600)
+
+h4
+  @include title(22px, 500)
+
+
+
+@mixin text_body($font-size)
   font-weight: 400
   line-height: 150%
+  color: vars.$color-text
+  font-size: $font-size
 
+p
+  @include text_body(18px)
 
 .text_body
-  font-size: 18px
+  @include text_body(18px)
 
 .text_body2
-  font-size: 16px
+  @include text_body(16px)
 
 .text_note
-  font-size: 14px !important
-
+  @include text_body(14px)
 
 .text_small
-  font-weight: 400
-  font-size: 12px
-  line-height: 15px
+  @include text_body(12px)
 
 
-.text_med
+.text_medium
   font-weight: 500
 
 .text_bold

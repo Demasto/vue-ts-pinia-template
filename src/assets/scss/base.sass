@@ -1,1 +1,39 @@
+@use "vars"
 
+html
+  font-family: vars.$font-family
+  font-size: 1rem
+  line-height: 1.5
+  overflow-x: hidden
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+body
+  min-height: 100vh
+  min-width: vars.$min-width
+  color: vars.$color-text
+  background: vars.$color-background
+  transition: color 0.5s, background-color 0.5s
+
+a
+  user-select: none
+  color: vars.$color-primary
+  background-color: transparent
+  cursor: pointer
+  text-decoration: none
+  transition: 0.5s
+  &:hover
+    color: vars.$color-accent
+  &:active
+    opacity: 0.7
+
+.link
+  cursor: pointer
+  &:hover
+    text-decoration: underline
+  &:active
+    opacity: 0.7
+
+.router-link-active
+  color: vars.$color-accent
