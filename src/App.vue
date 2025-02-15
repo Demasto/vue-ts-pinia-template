@@ -17,7 +17,7 @@ import { Notifications } from "@kyvg/vue3-notification";
 </template>
 
 <style lang="sass" scoped>
-@use '@/assets/scss/vars'
+@use '@/assets/sass/vars'
 
 header
   background: vars.$color-card

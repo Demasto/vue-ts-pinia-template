@@ -1,0 +1,27 @@
+@use "vars"
+
+a,button, input
+  outline: 1px solid transparent
+  &:focus-visible
+    outline: vars.$border !important
+  &:focus
+    outline: none
+
+input
+  font-size: 18px !important
+  color: vars.$color-text
+  width: 100%
+  outline: none
+  padding: 5px
+  background-color: vars.$input-bg-color !important
+  border: vars.$input-border !important
+  border-radius: vars.$border-radius !important
+  &::placeholder
+    color: vars.$input-placeholder
+
+
+
+label
+  font-size: 16px
+  color: vars.$color-text-2
+

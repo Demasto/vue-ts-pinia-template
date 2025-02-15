@@ -1,0 +1,21 @@
+/**
+ * src/styles/settings.scss
+ *
+ * Configures SASS variables and Vuetify overwrites
+ */
+
+// https://vuetifyjs.com/features/sass-variables/`
+ @use 'vuetify/settings' with (
+   $color-pack: false,
+   $tabs-height: max-content,
+
+   $button-colored-disabled: true,
+   $button-disabled-opacity: 1,
+   $button-text-transform: none,
+
+   $select-content-border-radius: 8px,
+   $tooltip-padding: 10px 20px,
+   $tooltip-background-color: white,
+   $tooltip-text-color: #23509D,
+   $combobox-focused-input: 1px solid red,
+ );

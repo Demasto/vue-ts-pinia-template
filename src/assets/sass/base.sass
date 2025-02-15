@@ -1,8 +1,6 @@
 @use "vars"
 
 html
-  font-family: vars.$font-family
-  font-size: 1rem
   line-height: 1.5
   overflow-x: hidden
   text-rendering: optimizeLegibility
@@ -10,6 +8,8 @@ html
   -moz-osx-font-smoothing: grayscale
 
 body
+  font-family: vars.$font-family
+  font-size: 1rem
   min-height: 100vh
   min-width: vars.$min-width
   color: vars.$color-text
@@ -22,7 +22,7 @@ a
   background-color: transparent
   cursor: pointer
   text-decoration: none
-  transition: 0.5s
+  transition: color 0.5s, background-color 0.5s
   &:hover
     color: vars.$color-accent
   &:active
@@ -37,3 +37,10 @@ a
 
 .router-link-active
   color: vars.$color-accent
+
+.card
+  background: vars.$color-card
+  border-radius: vars.$border-radius
+  padding: 20px
+  box-shadow: vars.$shadow
+
